@@ -13,19 +13,12 @@ module Concerns
       x = self.find_by_name(name)
 
       if  x == nil
-        Song.all.each do |song|
-          puts song.name
-        end
         self.create(name)
-        Song.all.each do |song|
-          puts song.name
-        end
       else
-        puts x
+        puts name
+        x
       end
-      Song.all.each do |song|
-        puts song.name
-      end
+
     end
 
   end
