@@ -13,7 +13,7 @@ module Concerns
 
       x = self.find_by_name(name)
       if  x == nil
-        name
+        puts name
         self.create(name)
 
       else
