@@ -21,7 +21,7 @@ module Concerns
           puts song.name
         end
       else
-        x
+        puts x
       end
       Song.all.each do |song|
         puts song.name
