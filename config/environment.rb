@@ -3,6 +3,12 @@ Bundler.require
 
 module Concerns
   module Findable
+
+    def create(name)
+      self.new(name)
+    end
+
+
     def find_by_name(name)
       self.all.detect(name) {|x| x.name == name}
     end
