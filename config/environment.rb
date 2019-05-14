@@ -10,22 +10,13 @@ module Concerns
     end
 
     def find_or_create_by_name(name)
-      Song.all.each do |song|
-        if song.name == name
-          return song
-        end
+      x = self.find_by_name(name)
+      if  find_by_name(name) == nil
+        self.create(name).name
+      else
+        x
       end
     end
-
-    #def find_by_name(name)
-    #  all.find do |song|
-    #    song.name == name
-    #  end
-    #end
-
-    #def find_or_create_by_name(name)
-    #  find_by_name(name) || self.create(name)
-    #end
 
   end
 end
