@@ -9,10 +9,9 @@ module Concerns
     end
 
     def find_or_create_by_name(name)
-      x = find_by_name(name)
-      if  x == nil
-        y = self.create(name)
-        y
+      find_by_name(name)
+      if find_by_name(name)  == nil
+        self.create(name)
       else
         x
       end
