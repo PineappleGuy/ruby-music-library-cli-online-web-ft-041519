@@ -11,7 +11,8 @@ module Concerns
     def find_or_create_by_name(name)
       x = find_by_name(name)
       if  x == nil
-        return self.create(name)
+        y = self.create(name)
+        y
       else
         x
       end
