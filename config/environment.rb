@@ -17,6 +17,9 @@ module Concerns
           puts song.name
         end
         self.create(name)
+        Song.all.each do |song|
+          puts song.name
+        end
       else
         x
       end
