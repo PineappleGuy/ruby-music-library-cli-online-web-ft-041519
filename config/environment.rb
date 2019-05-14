@@ -16,7 +16,6 @@ module Concerns
         self.create(name)
       else
         x
-        puts "fuckoff"
       end
     end
 
