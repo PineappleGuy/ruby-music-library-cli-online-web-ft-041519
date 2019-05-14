@@ -14,6 +14,7 @@ module Concerns
       x = find_by_name(name)
       if  x == nil
         self.create(name)
+        puts "this happens"
       else
         x
       end
