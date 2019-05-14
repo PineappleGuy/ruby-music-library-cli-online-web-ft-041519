@@ -1,3 +1,4 @@
+require 'pry'
 require 'bundler'
 Bundler.require
 
@@ -16,6 +17,7 @@ module Concerns
       else
         x
       end
+      binding.pry
     end
 
   end
