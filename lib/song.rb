@@ -41,7 +41,7 @@ class Song
 
   def self.create(name)
     self.new(name)
-    puts name
+
   end
 
   def self.destroy_all
