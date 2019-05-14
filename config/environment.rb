@@ -15,7 +15,6 @@ module Concerns
           return song
         end
       end
-        Song.create(name)
     end
 
     #def find_by_name(name)
