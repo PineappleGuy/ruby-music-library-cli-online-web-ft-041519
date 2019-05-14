@@ -18,6 +18,7 @@ module Concerns
 
       else
         x
+        puts x
       end
     end
 
