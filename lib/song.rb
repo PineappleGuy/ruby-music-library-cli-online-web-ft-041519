@@ -41,7 +41,6 @@ class Song
 
   def self.create(name)
     self.new(name)
-    puts "fuck off"
   end
 
   def self.destroy_all
