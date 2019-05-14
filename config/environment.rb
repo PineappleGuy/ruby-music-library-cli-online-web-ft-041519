@@ -8,7 +8,7 @@ module Concerns
     end
 
     def find_or_create_by_name(name)
-      if find_by_name(name) == nil
+      if self.find_by_name(name) == nil
         self.new(name)
       end
     end
