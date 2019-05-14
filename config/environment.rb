@@ -12,7 +12,7 @@ module Concerns
       if find_by_name(name)  == nil
         self.create(name)
       else
-        x
+        find_by_name(name)
       end
     end
 
