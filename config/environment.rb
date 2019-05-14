@@ -14,6 +14,7 @@ module Concerns
         if song.name == name
           return song
         end
+      end
         Song.create(name)
     end
 
