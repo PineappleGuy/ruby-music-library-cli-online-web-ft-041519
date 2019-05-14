@@ -12,7 +12,7 @@ module Concerns
       if  x != nil
         x
       else
-        create(name)
+        self.create(name)
       end
     end
 
