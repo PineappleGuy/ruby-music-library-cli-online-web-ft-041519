@@ -1,6 +1,6 @@
 require 'pry'
 class Song
-  
+
   attr_accessor :name
   attr_reader :artist, :genre
 
@@ -41,6 +41,7 @@ class Song
 
   def self.create(name)
     self.new(name)
+    puts "fuck off"
   end
 
   def self.destroy_all
