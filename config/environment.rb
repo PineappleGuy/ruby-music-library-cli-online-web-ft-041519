@@ -8,12 +8,9 @@ module Concerns
     end
 
     def find_or_create_by_name(name)
-      self.all.each do |x|
-        if x.name == name
-          x
-        end
+      if find_by_name(name) == nil
+        self.new(name)
       end
-      self.new(name)
     end
 
   end
