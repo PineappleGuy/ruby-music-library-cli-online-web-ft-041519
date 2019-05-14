@@ -12,6 +12,7 @@ module Concerns
     def find_or_create_by_name(name)
       puts name
       x = self.find_by_name(name)
+      puts x
       if  x == nil
         self.create(name)
       else
