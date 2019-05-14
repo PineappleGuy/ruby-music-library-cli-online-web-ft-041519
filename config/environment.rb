@@ -8,11 +8,13 @@ module Concerns
     end
 
     def find_or_create_by_name(name)
-      if self.all.include?(name) == false
-        self.all << name
-      else
-        self.all.detect(name) {|x| x.name == name}
+      self.all.each do |x|
+        if x.name == name
+          x
+        end
       end
+      self.all << name
+    end
     end
 
   end
