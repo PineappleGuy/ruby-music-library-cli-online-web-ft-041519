@@ -4,7 +4,7 @@ Bundler.require
 module Concerns
   module Findable
     def find_by_name(name)
-      Song.all.detect(name) {|song| song.name == name}
+      self.all.detect(name) {|x| x.name == name}
     end
   end
 end
