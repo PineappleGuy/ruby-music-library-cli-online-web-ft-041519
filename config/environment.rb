@@ -13,8 +13,9 @@ module Concerns
           x
         end
       end
-      self.all << name
+      self.new(name)
     end
+    
     end
 
   end
