@@ -52,7 +52,7 @@ class Song
     Song.new(name)
 
   end
-        
+
 
   end
 
