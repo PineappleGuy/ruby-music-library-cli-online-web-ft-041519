@@ -6,6 +6,15 @@ module Concerns
     def find_by_name(name)
       self.all.detect(name) {|x| x.name == name}
     end
+
+    def find_or_create_by_name(name)
+      if self.all.include?(name) == false
+        self.all << name
+      else
+        self.all.detect(name) {|x| x.name == name}
+      end
+    end
+
   end
 end
 
