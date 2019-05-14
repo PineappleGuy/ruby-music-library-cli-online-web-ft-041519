@@ -10,7 +10,6 @@ module Concerns
     end
 
     def find_or_create_by_name(name)
-      binding.pry
       x = self.find_by_name(name)
       if  x == nil
         puts name
@@ -18,7 +17,6 @@ module Concerns
       else
         x
       end
-      binding.pry
     end
 
   end
