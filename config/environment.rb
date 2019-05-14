@@ -16,8 +16,6 @@ module Concerns
       self.new(name)
     end
 
-    end
-
   end
 end
 
