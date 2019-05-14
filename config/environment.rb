@@ -4,9 +4,6 @@ Bundler.require
 module Concerns
   module Findable
 
-    def create(name)
-      self.new(name)
-    end
 
 
     def find_by_name(name)
@@ -18,7 +15,7 @@ module Concerns
       if  x != nil
         x
       else
-        create(name)
+        self.create(name)
       end
     end
 
