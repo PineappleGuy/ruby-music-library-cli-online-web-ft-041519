@@ -38,10 +38,6 @@ class Genre
     @@all
   end
 
-  def self.create(name)
-    self.new(name)
-  end
-
   def self.destroy_all
     @@all.clear
   end
