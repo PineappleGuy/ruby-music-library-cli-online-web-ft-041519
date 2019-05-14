@@ -4,8 +4,6 @@ Bundler.require
 module Concerns
   module Findable
 
-
-
     def find_by_name(name)
       self.all.detect(name) {|x| x.name == name}
     end
@@ -14,7 +12,6 @@ module Concerns
       x = find_by_name(name)
       if  x == nil
         self.create(name)
-
       else
         x
       end
